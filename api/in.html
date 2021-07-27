@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleapi.css">
+    
+
+    <title>avtar</title>
+
+   
+
+
+
+</head>
+<body>
+    <section>
+
+<h1>What dose your name say about your personality(shashwat)?  </h1>
+<div class="center">
+    <div class="name">
+        <label>ENTER YOUR NAME</label>
+    <input type="text" name="" id="nameid">
+    </div>
+    <div class="img">
+<img src="api.jpeg" width ="200" height="200" id="imgchange">
+    </div>
+    <button>Click Me</button>
+    
+</div>
+    </section> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    
+   
+
+
+   
+
+ <script>
+        $(document).ready(function(){
+        
+            $('button').click(function(){
+                const name= $('#nameid').val() //value mil chuki h naam ki when u click on click me button 
+                alert(name);
+                $('#imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}
+            `);
+            
+            
+            })
+            
+                    })
+                    </script>
+    
+
+
+    
+
+
+    
+
+
+</body>
+
+</html>
